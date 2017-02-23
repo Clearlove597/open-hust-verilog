@@ -43,8 +43,12 @@ module regfile
         end
     end
 
-    assign regA = (raddrA != 0) ? regfile[raddrA] : 0;
-    assign regB = (raddrB != 0) ? regfile[raddrB] : 0; 
+    assign regA = (we && waddr == raddrA) ? wdata
+                : (raddrA != 0) ? regfile[raddrA]
+                : 0;
+    assign regB = (we && waddr == raddrB) ? wdata
+                : (raddrB != 0) ? regfile[raddrB]
+                : 0;
     assign v0_data = regfile[`V0];
     assign a0_data = regfile[`A0];
 
