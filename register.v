@@ -1,5 +1,7 @@
 /**
  * @module register
+ * @author sabertazimi
+ * @email sabertazimi@gmail.com
  * @brief D filp flop
  * @param DATA_WIDTH data width
  * @input clk clock signal

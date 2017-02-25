@@ -1,5 +1,7 @@
 /**
  * @module alu
+ * @author sabertazimi
+ * @email sabertazimi@gmail.com
  * @param DATA_WIDTH data width
  * @input srcA A port data
  * @input srcB B port data
